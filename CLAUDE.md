@@ -23,21 +23,19 @@
 ## Repository Overview
 
 ### Current State
-This repository is newly initialized and currently empty. This CLAUDE.md file serves as the foundational guide for AI assistants working on this project.
+This repository includes the Anthropic Skills toolkit for creating Claude skills. The skill-creator functionality allows you to build custom skills that extend Claude's capabilities.
 
 ### Purpose
-[To be filled in as project develops]
+Development repository with Anthropic Skills integration for creating and managing Claude skills.
 
 ### Technology Stack
-[To be documented when technologies are chosen]
-- **Primary Language:** TBD
-- **Framework:** TBD
-- **Build Tool:** TBD
-- **Package Manager:** TBD
-- **Testing Framework:** TBD
+- **Primary Language:** Python 3.11.14
+- **Skills Framework:** Anthropic Skills (https://github.com/anthropics/skills)
+- **Skill Creator:** Installed and operational
 
 ### Key Dependencies
-[To be documented as dependencies are added]
+- Python 3.11+ (installed)
+- Anthropic Skills repository (cloned in `/skills/` directory)
 
 ---
 
@@ -73,18 +71,102 @@ As this repository grows, the following structure is recommended:
 ```
 /home/user/CaudeCode0123/
 ├── .git/                 # Git metadata
-└── CLAUDE.md             # This file
+├── skills/               # Anthropic Skills repository
+│   ├── skills/          # Example skills
+│   │   └── skill-creator/  # Skill creation toolkit
+│   │       ├── scripts/    # Skill creation scripts
+│   │       │   ├── init_skill.py      # Initialize new skill
+│   │       │   ├── package_skill.py   # Package skill for distribution
+│   │       │   └── quick_validate.py  # Validate skill structure
+│   │       ├── references/ # Reference documentation
+│   │       └── SKILL.md    # Skill creator guide
+│   ├── spec/            # Agent Skills specification
+│   └── template/        # Skill templates
+└── CLAUDE.md            # This file
 ```
 
 ---
 
 ## Development Workflows
 
-### Initial Setup
-[To be documented when setup process is established]
+### Skill Creation with skill-creator
+
+The skill-creator toolkit enables you to build custom skills that extend Claude's capabilities.
+
+#### What Are Skills?
+
+Skills are modular packages containing:
+- **Specialized workflows** - Multi-step procedures for specific domains
+- **Tool integrations** - Instructions for working with specific file formats or APIs
+- **Domain expertise** - Company-specific knowledge, schemas, business logic
+- **Bundled resources** - Scripts, references, and assets for complex tasks
+
+#### Creating a New Skill
+
+**Step 1: Initialize a new skill**
+```bash
+python3 skills/skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-directory>
+```
+
+Example:
+```bash
+python3 skills/skills/skill-creator/scripts/init_skill.py my-custom-skill --path .
+```
+
+This creates:
+- `SKILL.md` - Main skill definition with YAML frontmatter
+- `scripts/` - Executable code (Python/Bash)
+- `references/` - Documentation loaded as needed
+- `assets/` - Files used in output (templates, icons, etc.)
+
+**Step 2: Edit the skill**
+
+Update `SKILL.md` with:
+- **Frontmatter** (YAML):
+  ```yaml
+  name: my-skill-name
+  description: Complete description of what the skill does and when to use it
+  ```
+- **Body** (Markdown): Instructions, workflows, and resource usage
+
+**Step 3: Add resources**
+- `scripts/` - Python/Bash scripts for repetitive, deterministic tasks
+- `references/` - Documentation (schemas, API docs, policies)
+- `assets/` - Templates, images, boilerplate code
+
+**Step 4: Validate the skill**
+```bash
+python3 skills/skills/skill-creator/scripts/quick_validate.py <skill-directory>
+```
+
+**Step 5: Package the skill**
+```bash
+python3 skills/skills/skill-creator/scripts/package_skill.py <skill-directory> [output-dir]
+```
+
+This creates a `.skill` file (ZIP with .skill extension) ready for distribution.
+
+#### Skill Design Principles
+
+1. **Concise is Key** - Only add context Claude doesn't already have
+2. **Progressive Disclosure** - Use three-level loading:
+   - Metadata (name + description) - always in context
+   - SKILL.md body - when skill triggers
+   - Bundled resources - loaded as needed
+3. **Appropriate Freedom** - Match specificity to task fragility:
+   - High freedom: text-based instructions
+   - Medium freedom: pseudocode/scripts with parameters
+   - Low freedom: specific scripts for fragile operations
+
+#### Reference Documentation
+
+- Full guide: `skills/skills/skill-creator/SKILL.md`
+- Workflows: `skills/skills/skill-creator/references/workflows.md`
+- Output patterns: `skills/skills/skill-creator/references/output-patterns.md`
+- Agent Skills standard: http://agentskills.io
 
 ### Local Development
-[To be documented when development environment is configured]
+[To be documented when additional development environment is configured]
 
 ### Build Process
 [To be documented when build system is implemented]
@@ -198,6 +280,55 @@ As this repository grows, the following structure is recommended:
 ---
 
 ## Common Tasks
+
+### Creating a Custom Skill
+
+**Example: Creating a database query skill**
+
+```bash
+# Step 1: Initialize the skill
+python3 skills/skills/skill-creator/scripts/init_skill.py db-query-helper --path .
+
+# Step 2: Edit db-query-helper/SKILL.md
+# - Update description in frontmatter
+# - Add workflow instructions
+# - Document when to use the skill
+
+# Step 3: Add resources
+# - scripts/query_builder.py - Script for building SQL queries
+# - references/schema.md - Database schema documentation
+# - assets/query_templates/ - Common query templates
+
+# Step 4: Validate
+python3 skills/skills/skill-creator/scripts/quick_validate.py db-query-helper
+
+# Step 5: Package
+python3 skills/skills/skill-creator/scripts/package_skill.py db-query-helper ./
+```
+
+**Skill Structure Best Practices:**
+- Keep SKILL.md under 500 lines
+- Use imperative/infinitive form in writing
+- Move detailed docs to `references/`
+- Test scripts by actually running them
+- Delete unused example files
+
+### Using skill-creator Scripts
+
+**Initialize a new skill:**
+```bash
+python3 skills/skills/skill-creator/scripts/init_skill.py <skill-name> --path <output-dir>
+```
+
+**Validate a skill:**
+```bash
+python3 skills/skills/skill-creator/scripts/quick_validate.py <skill-directory>
+```
+
+**Package a skill:**
+```bash
+python3 skills/skills/skill-creator/scripts/package_skill.py <skill-directory> [output-dir]
+```
 
 ### Adding a New Feature
 1. Read relevant existing code
@@ -396,16 +527,23 @@ This CLAUDE.md file should be updated whenever:
 ## Notes for Future Development
 
 As this repository grows, remember to update this file with:
-- [ ] Actual technology stack when chosen
-- [ ] Directory structure as it's established
+- [x] Actual technology stack when chosen (Python 3.11 + Anthropic Skills)
+- [x] Directory structure as it's established (skills/ directory added)
 - [ ] Build and deployment processes
-- [ ] Environment setup instructions
+- [x] Environment setup instructions (skill-creator documented)
 - [ ] API documentation standards
 - [ ] Specific testing patterns
 - [ ] Performance considerations
 - [ ] Security requirements
 - [ ] Third-party integrations
 - [ ] Common troubleshooting steps
+
+### Installed Tools
+
+- **Anthropic Skills** - Framework for creating Claude skills
+  - Location: `/home/user/CaudeCode0123/skills/`
+  - Repository: https://github.com/anthropics/skills
+  - Documentation: See "Skill Creation with skill-creator" section above
 
 ---
 
