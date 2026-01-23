@@ -71,7 +71,7 @@ As this repository grows, the following structure is recommended:
 ```
 /home/user/CaudeCode0123/
 ├── .git/                 # Git metadata
-├── skills/               # Anthropic Skills repository
+├── skills/               # Anthropic Skills repository (submodule)
 │   ├── skills/          # Example skills
 │   │   └── skill-creator/  # Skill creation toolkit
 │   │       ├── scripts/    # Skill creation scripts
@@ -82,6 +82,15 @@ As this repository grows, the following structure is recommended:
 │   │       └── SKILL.md    # Skill creator guide
 │   ├── spec/            # Agent Skills specification
 │   └── template/        # Skill templates
+├── seo-blog-writing/     # Custom SEO Blog Writing skill
+│   ├── SKILL.md         # Skill definition
+│   └── references/      # AI words to avoid reference
+├── output/              # Generated content and deliverables
+│   ├── articles/        # SEO articles organized by date
+│   │   └── YYYY-MM-DD-article-name/
+│   ├── skills/          # Generated skill packages
+│   └── documents/       # Other generated documents
+├── seo-blog-writing.skill  # Packaged skill file (5.3KB)
 └── CLAUDE.md            # This file
 ```
 
@@ -328,6 +337,39 @@ python3 skills/skills/skill-creator/scripts/quick_validate.py <skill-directory>
 **Package a skill:**
 ```bash
 python3 skills/skills/skill-creator/scripts/package_skill.py <skill-directory> [output-dir]
+```
+
+### Organizing Output Files
+
+All generated content should be organized in the `output/` directory:
+
+**Create article folder:**
+```bash
+mkdir -p output/articles/YYYY-MM-DD-article-name
+```
+
+**Create skill output folder:**
+```bash
+mkdir -p output/skills/skill-name
+```
+
+**Create document folder:**
+```bash
+mkdir -p output/documents/YYYY-MM-DD-document-name
+```
+
+**Naming Conventions:**
+- Use `YYYY-MM-DD-` prefix for chronological sorting
+- Use descriptive, keyword-rich folder names
+- Store related files (article, summary, assets) together
+- Always include a summary or metadata file
+
+**Example Structure:**
+```
+output/articles/2026-01-23-best-tumbler-manufacturers-china/
+├── best-tumbler-manufacturers-china-2026.md
+├── article-summary.txt
+└── assets/                    # Optional: images, charts, etc.
 ```
 
 ### Adding a New Feature
