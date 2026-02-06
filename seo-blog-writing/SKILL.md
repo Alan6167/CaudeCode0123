@@ -199,8 +199,45 @@ Before finalizing, verify:
 - [ ] Meta description is under 155 characters
 - [ ] SEO title is under 60 characters
 - [ ] Content meets minimum word count
+- [ ] Homepage screenshots captured for all companies mentioned
+- [ ] Screenshots saved in article's `assets/` directory with descriptive filenames
+- [ ] Screenshot markdown references added below each company heading
 
-### Step 7: Document Creation
+### Step 7: Website Screenshots
+
+Capture homepage screenshots for the client and each verified competitor to use as visual assets in the article.
+
+**Local Method (Playwright):**
+```bash
+# Single screenshot
+python3 scripts/screenshot_website.py <url> [output_path]
+
+# Batch capture for all companies in the article
+python3 scripts/capture_article_screenshots.py [output_dir]
+```
+
+**Cloud API Method (when Playwright is unavailable):**
+```bash
+# Single screenshot
+python3 scripts/screenshot_online.py <url> --service <service_name> --api-key <key>
+
+# Batch capture with rate limiting
+python3 scripts/capture_screenshots_online.py --output <output_dir> --service <service_name> --delay <seconds>
+```
+
+**Screenshot Guidelines:**
+- Capture the homepage of every company mentioned in the article
+- Save screenshots to the article's `assets/` directory (e.g., `output/articles/YYYY-MM-DD-article-name/assets/`)
+- Use descriptive filenames: `company-name-homepage.png`
+- Prefer the local Playwright method for speed; fall back to cloud APIs if needed
+- Verify each screenshot is readable and correctly rendered before proceeding
+
+**Adding Screenshots to the Article:**
+- Place screenshots below each company's H3 heading
+- Use markdown format: `![Company Name Homepage](assets/company-name-homepage.png)`
+- Add a brief caption describing the screenshot
+
+### Step 8: Document Creation
 
 Use the docx skill to create the final document:
 
@@ -247,10 +284,16 @@ H1: [Main Title]
    - Factual, balanced tone (not overly promotional)
    - Natural integration of client's strengths
 
-6. **Create Word document with docx skill**
-   - Proper formatting and structure
+6. **Capture website screenshots**
+   - Take homepage screenshots for client and all competitors
+   - Save to article's `assets/` directory
+   - Add screenshot references in article markdown
 
-7. **Deliver with SEO title and meta description**
+7. **Create Word document with docx skill**
+   - Proper formatting and structure
+   - Include screenshots in document
+
+8. **Deliver with SEO title and meta description**
 
 ## Common Mistakes to Avoid
 
@@ -269,8 +312,13 @@ H1: [Main Title]
    - SEO Title
    - Meta Description
    - Full article with proper formatting
+   - Embedded company homepage screenshots
 
-2. **Summary** of:
+2. **Screenshots** in `assets/` directory:
+   - Homepage PNG for each company mentioned
+   - Descriptive filenames (e.g., `company-name-homepage.png`)
+
+3. **Summary** of:
    - Total word count
    - Keyword density achieved
    - Number of sources verified
