@@ -160,24 +160,24 @@ Buyers who prefer a publicly listed, financially transparent supplier with stron
 
 ---
 
-### 7. Anhui Fuguang Industrial Co., Ltd.
+### 7. Anhui Fuguang Import and Export Trading Co., Ltd.
 
-**Official Website:** [www.fgaofficial.com](https://www.fgaofficial.com/)
+**Official Website:** [www.fgabottle.com](https://www.fgabottle.com/)
 
-**Location:** Hefei, Anhui, China
+**Location:** NO.53, Science Avenue, High-Tech District, Hefei, Anhui, China
 
 ![Fuguang Homepage](assets/fuguang-homepage.png)
 
-Fuguang was founded in 1984 and has grown into one of the world's largest drinkware producers over 40+ years. The company holds more than 1,200 independent intellectual property rights and has led or contributed to the drafting of over 10 national and industry standards for China's cup and bottle sector.
+Fuguang was founded in 1984 and has grown into one of the world's largest drinkware producers over 40+ years. The company holds 400+ patents and has led or contributed to the drafting of over 10 national and industry standards for China's cup and bottle sector. Products reach 1 billion+ customers across 150+ countries.
 
 **Products**
-Vacuum flasks, stainless steel tumblers, plastic water bottles, glass water bottles, and food jars. Products are sold in 150+ countries and used by over 1 billion customers globally.
+Stainless steel water bottles and tumblers, plastic water bottles, glass water bottles, sports bottles, titanium bottles, ceramic mugs, smart water bottles, protein shakers, and aluminum bottles. Fuguang also offers flexible shipping terms including FOB, CIF, DDU, and DDP.
 
 **Certifications**
-ISO 9001:2000 (certified since 2003). Independent import/export trade license.
+ISO certified. Committed to eco-friendly materials and sustainable production processes.
 
 **Best For**
-Buyers seeking a manufacturer that actively shapes Chinese industry standards and offers massive scale with decades of brand heritage.
+Buyers seeking a manufacturer that actively shapes Chinese industry standards, offers a wide material range (stainless steel, plastic, glass, titanium, ceramic), and provides flexible OEM/ODM services with decades of brand heritage.
 
 ---
 
@@ -279,7 +279,7 @@ Factories near Ningbo, Shanghai, or Shenzhen ports can cut inland freight costs.
 | 4 | **Ansheng (Ansune)** | Yongkang, Zhejiang | 340,000 m² | 65M units/year, Malaysia factory | ISO, CNAS |
 | 5 | **KingStar** | Shanghai / Jinhua | 30,000 m² | Industry 4.0 smart factory, 5G production | BPA-free, food-grade |
 | 6 | **Cayi** | Wuyi, Zhejiang | 120,000 m² | A-share listed, 2.4M units/month capacity | ISO 9001:2015 |
-| 7 | **Fuguang** | Hefei, Anhui | Large-scale | 1,200+ IP rights, national standard drafter | ISO 9001 |
+| 7 | **Fuguang** | Hefei, Anhui | Large-scale | 400+ patents, national standard drafter, multi-material | ISO certified |
 | 8 | **Golmate** | Guangzhou / Dongyang | Mid-scale | Europe-focused (70% revenue), 1,000 MOQ | FDA, REACH, LFGB |
 | 9 | **Inoxicon** | Yongkang, Zhejiang | 10,000 m² | 40% faster delivery, kitchen + drinkware | ISO 9001, BSCI |
 | 10 | **Steel.Hydro** | China | — | B2B customization focus, eco-friendly | International standards |

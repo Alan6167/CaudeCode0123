@@ -26,7 +26,7 @@ python3 scripts/screenshot_website.py https://www.haers.com/ "$ASSETS/haers-home
 python3 scripts/screenshot_website.py https://www.ansune.com/ "$ASSETS/ansune-homepage.png"
 python3 scripts/screenshot_website.py https://www.waterbottle.tech/ "$ASSETS/kingstar-homepage.png"
 python3 scripts/screenshot_website.py https://en.cayigroup.com/ "$ASSETS/cayi-homepage.png"
-python3 scripts/screenshot_website.py https://www.fgaofficial.com/ "$ASSETS/fuguang-homepage.png"
+python3 scripts/screenshot_website.py https://www.fgabottle.com/ "$ASSETS/fuguang-homepage.png"
 python3 scripts/screenshot_website.py https://golmate.com/ "$ASSETS/golmate-homepage.png"
 python3 scripts/screenshot_website.py https://inoxiconkitchen.com/ "$ASSETS/inoxicon-homepage.png"
 python3 scripts/screenshot_website.py https://steelhydro.com/ "$ASSETS/steelhydro-homepage.png"
