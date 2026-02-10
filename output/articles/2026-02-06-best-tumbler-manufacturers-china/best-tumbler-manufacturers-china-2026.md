@@ -30,16 +30,23 @@ China's Zhejiang, Anhui, and Guangdong provinces form the global center of tumbl
 Ningbo Maxlink is a vertically integrated drinkware manufacturer with 19 years of industry experience. The company operates under the Syloon Group and covers design, development, manufacturing, and export from a single campus.
 
 **Factory and Scale**
-Maxlink runs a 40,000 m² production facility with nine specialized workshops — offset printing, metal forming, injection molding, sewing, and packaging. The company employs over 560 staff, including a 70-person design and product development team and a 40-person quality control department.
+- 40,000 m² production facility with nine specialized workshops (offset printing, metal forming, injection molding, sewing, packaging)
+- 560+ employees, including a 70-person design and product development team
+- 40-person dedicated quality control department
+- Annual audits by major global buyers and third-party organizations
 
 **Products**
-The product range spans stainless steel insulated tumblers, water bottles, mugs, food jars, barware, and jugs. Maxlink also produces plastic, glass, and ceramic drinkware, along with accessories such as lids, straws, and brushes. The company maintains dedicated collections — Fashion, Kids, Elegant, and Promotional — plus an exclusive Syloon line built on proprietary molds.
+- Stainless steel insulated tumblers, water bottles, mugs, food jars, barware, and jugs
+- Plastic, glass, and ceramic drinkware
+- Accessories: lids, straws, and brushes
+- Dedicated collections: Fashion, Kids, Elegant, Promotional, and exclusive Syloon line (proprietary molds)
 
 **Certifications**
-ISO 9001, BSCI, SEDEX-4P, and SCAN certified. The factory undergoes annual audits by major global buyers and third-party organizations.
+- ISO 9001, BSCI, SEDEX-4P, and SCAN
 
 **Sustainability**
-Maxlink aligns its operations with UN Sustainable Development Goals and China's 2030 carbon peak targets. Product lines include tumblers made from recycled materials, bamboo, and wheat straw.
+- Aligned with UN Sustainable Development Goals and China's 2030 carbon peak targets
+- Product lines using recycled materials, bamboo, and wheat straw
 
 **Best For**
 Brands that need a one-stop partner for multi-material drinkware with strong design support, eco-friendly options, and flexible order quantities.
@@ -57,13 +64,21 @@ Brands that need a one-stop partner for multi-material drinkware with strong des
 Everich has supplied insulated drinkware for over 20 years. The company develops more than 450 new product designs each year and holds 400+ registered patents. Notable clients include Walmart, Target, Costco, Lowe's, Amazon, Carrefour, eBay, and Coca-Cola.
 
 **Factory and Scale**
-The Hangzhou-based headquarters oversees automated production lines across multiple sites. Everich also operates manufacturing hubs in Thailand and Cambodia, giving buyers multi-country sourcing options to manage tariff exposure. A 30+ person R&D team drives product development.
+- Hangzhou-based headquarters with automated production lines across multiple sites
+- Additional manufacturing hubs in Thailand and Cambodia for multi-country sourcing
+- 30+ person R&D team driving 450+ new product designs annually
+- 400+ registered patents
 
 **Products**
-Stainless steel tumblers, sports bottles, protein shakers, can coolers, hard coolers, lunch boxes, kids bottles, pet bowls, coffee series items, wine tumblers, and small kitchen appliances.
+- Stainless steel tumblers, sports bottles, and protein shakers
+- Can coolers, hard coolers, and lunch boxes
+- Kids bottles, pet bowls, and coffee series items
+- Wine tumblers and small kitchen appliances
 
 **Certifications**
-RCS, GRS, GLF, and ISCC sustainability certifications. FDA and LFGB food-contact approvals. NDA-backed OEM for IP protection.
+- RCS, GRS, GLF, and ISCC (sustainability)
+- FDA and LFGB (food-contact safety)
+- NDA-backed OEM for IP protection
 
 **Best For**
 Large-volume buyers who need a broad product catalog, strong IP protection, and multi-country manufacturing to manage tariff exposure.
@@ -81,13 +96,23 @@ Large-volume buyers who need a broad product catalog, strong IP protection, and 
 Founded in 1985 in Yongkang, Haers became the first publicly listed Chinese company in the vacuum-bottle industry in 2011 (stock code: 002615). The name "Haers" comes from the English word "health." With 40+ years of history, Haers is one of the most recognized drinkware brands in China. Products are exported to 80+ countries.
 
 **Factory and Scale**
-Five manufacturing bases totaling 290,000 m² with 3,600+ employees. Annual production capacity exceeds 100 million units (250,000 units/day). A recent $300 million investment expanded plants in Yongkang and Thailand, making Haers the largest stainless steel water bottle manufacturer in the world by output.
+- Five manufacturing bases (Yongkang, Lin'an, Anhui, Thailand, Switzerland) totaling 290,000 m²
+- 3,600+ employees with advanced automated production lines
+- Annual production capacity: 100 million+ units (250,000 units/day)
+- Recent $300 million investment to expand Yongkang and Thailand plants
+- The largest stainless steel water bottle manufacturer in the world by output
 
 **Products**
-Stainless steel tumblers, vacuum flasks, titanium bottles, Tritan bottles, smart bottles, coffee mugs, wine tumblers, beer growlers, kids bottles, food containers, and electric kettles. Full OEM/ODM customization through the HAERS ID system — logo engraving, surface treatments, custom lids, and branded packaging.
+- Stainless steel tumblers, vacuum flasks, and titanium bottles
+- Tritan bottles, smart bottles, and coffee mugs
+- Wine tumblers, beer growlers, kids bottles, and food containers
+- Electric kettles
+- Full OEM/ODM via the HAERS ID system: logo engraving, surface treatments, custom lids, branded packaging
 
 **Certifications**
-ISO 9001, BRCGS, FDA, LFGB, REACH, RCS, and EPR. Over 50 international and 200 domestic certifications. 684 valid patents.
+- ISO 9001, BRCGS, FDA, LFGB, REACH, RCS, and EPR
+- 50+ international and 200+ domestic certifications
+- 684 valid patents
 
 **Best For**
 Buyers looking for the world's largest vacuum-flask manufacturer with a publicly listed track record, multi-material capability (including titanium), and global production bases.
@@ -105,13 +130,22 @@ Buyers looking for the world's largest vacuum-flask manufacturer with a publicly
 Ansheng is one of the largest tumbler factories in China by output volume — over 65 million units per year from its 340,000 m² facility. The company holds 250+ patents and operates four R&D centers in Yongkang, Shanghai, Niigata (Japan), and Kuala Lumpur (Malaysia).
 
 **Factory and Scale**
-150+ engineers, a CNAS-accredited testing center, and a 66% factory automation target. Annual sales exceeded $325 million in 2024. Ansheng also runs a manufacturing base in Malaysia (500,000+ units/month), which helps overseas buyers reduce tariff costs and shorten delivery times.
+- 340,000 m² main facility with 150+ engineers
+- 66% factory automation target
+- CNAS-accredited in-house testing center
+- Annual sales exceeded $325 million in 2024
+- Additional manufacturing base in Malaysia (500,000+ units/month) for tariff and delivery optimization
+- Four R&D centers: Yongkang, Shanghai, Niigata (Japan), Kuala Lumpur (Malaysia)
 
 **Products**
-Tumblers, water bottles, shaker bottles, mugs, food jars, jugs, and coffee pots. Products are exported to 70+ countries.
+- Tumblers, water bottles, and shaker bottles
+- Mugs, food jars, jugs, and coffee pots
+- Exported to 70+ countries
 
 **Certifications**
-ISO certified, CNAS-accredited testing center.
+- ISO certified
+- CNAS-accredited testing center
+- 250+ patents
 
 **Best For**
 High-volume wholesale buyers who need massive production capacity, competitive pricing, and a Southeast Asian factory option to manage import duties.
@@ -129,13 +163,21 @@ High-volume wholesale buyers who need massive production capacity, competitive p
 Founded in 2002, KingStar is a leading vacuum-insulated drinkware manufacturer headquartered in Shanghai. The company represents China's Industry 4.0 smart-factory model, with automated guided vehicles, robotic arms, and 5G-enabled production control. The R&D team of 38 engineers includes former staff from Yeti, Thermos, Tiger, and Hydro Flask.
 
 **Factory and Scale**
-A 30,000 m² smart factory with 900+ employees. In-house automated production lines for shaping, cutting, necking, stamping, injection, powder coating, painting, and vacuum testing. Inquiry response within 24 hours, sample delivery in 7 days, and order completion in 28 days.
+- 30,000 m² smart factory with 900+ employees
+- 38 experienced R&D engineers (including former Yeti, Thermos, Tiger, and Hydro Flask staff)
+- In-house automated lines: shaping, cutting, necking, stamping, injection, powder coating, painting, vacuum testing
+- Inquiry response: 24 hours | Sample delivery: 7 days | Order completion: 28 days
 
 **Products**
-Custom stainless steel water bottles, tumblers, flasks, coffee cups, travel mugs, coffee pots, wine bottles, food containers, beer pints, and beer growlers. All products are BPA-free and food-grade. Full OEM/ODM — custom shapes, lids, colors, logos, and private mold development.
+- Custom stainless steel water bottles, tumblers, and flasks
+- Coffee cups, travel mugs, coffee pots, and wine bottles
+- Food containers, beer pints, and beer growlers
+- All products BPA-free and food-grade
+- Full OEM/ODM: custom shapes, lids, colors, logos, and private mold development
 
 **Certifications**
-ISO 9001, FDA, LFGB, and RoHS. Third-party testing through SGS, Intertek, and Bureau Veritas.
+- ISO 9001, FDA, LFGB, and RoHS
+- Third-party testing through SGS, Intertek, and Bureau Veritas
 
 **Best For**
 Brands that value smart-factory traceability, automation-driven consistency, fast sample turnaround, and Shanghai-based project management.
@@ -152,14 +194,20 @@ Brands that value smart-factory traceability, automation-driven consistency, fas
 
 Founded in 2004, Cayi is an A-share listed company (stock code: 301004) with a 120,000 m² facility and over 1,000 employees, including roughly 200 senior technicians and managers.
 
-**Production Capacity**
-1.5 million vacuum bottles per month (with 500,000 units of extra capacity) plus 900,000 travel mugs and water bottles per month.
+**Factory and Scale**
+- 120,000 m² facility with 1,000+ employees (including ~200 senior technicians and managers)
+- Vacuum bottles: 1.5 million units/month (+ 500,000 units surge capacity)
+- Travel mugs and water bottles: 900,000 units/month
+- A-share listed company (stock code: 301004)
 
 **Products**
-Two main series — vacuum-insulated stainless steel containers (cups, pots, thermos bottles) and non-vacuum drinkware (travel mugs, water bottles).
+- Vacuum-insulated stainless steel containers: cups, pots, thermos bottles
+- Non-vacuum drinkware: travel mugs, water bottles
 
 **Certifications**
-ISO 9001:2015, "Made in Zhejiang" certification, and multiple Jinhua municipal quality and brand awards.
+- ISO 9001:2015
+- "Made in Zhejiang" certification
+- Multiple Jinhua municipal quality and brand awards
 
 **Best For**
 Buyers who prefer a publicly listed, financially transparent supplier with strong vacuum-insulation technology and large monthly capacity.
@@ -174,13 +222,23 @@ Buyers who prefer a publicly listed, financially transparent supplier with stron
 
 ![Fuguang Homepage](assets/fuguang-homepage.png)
 
-Fuguang was founded in 1984 and has grown into one of the world's largest drinkware producers over 40+ years. The company holds 400+ patents and has led or contributed to the drafting of over 10 national and industry standards for China's cup and bottle sector. Products reach 1 billion+ customers across 150+ countries.
+Fuguang was founded in 1984 and has grown into one of the world's largest drinkware producers over 40+ years. The company holds 400+ patents and has led or contributed to the drafting of over 10 national and industry standards for China's cup and bottle sector. Products reach customers across 150+ countries.
+
+**Factory and Scale**
+- 40+ years of manufacturing history
+- 400+ patents
+- Drafted or contributed to 10+ national and industry standards
+- Flexible shipping terms: FOB, CIF, DDU, and DDP
 
 **Products**
-Stainless steel water bottles and tumblers, plastic water bottles, glass water bottles, sports bottles, titanium bottles, ceramic mugs, smart water bottles, protein shakers, and aluminum bottles. Fuguang also offers flexible shipping terms including FOB, CIF, DDU, and DDP.
+- Stainless steel water bottles and tumblers
+- Plastic water bottles and glass water bottles
+- Sports bottles, titanium bottles, and aluminum bottles
+- Ceramic mugs, smart water bottles, and protein shakers
 
 **Certifications**
-ISO certified. Committed to eco-friendly materials and sustainable production processes.
+- ISO certified
+- Eco-friendly materials and sustainable production processes
 
 **Best For**
 Buyers seeking a manufacturer that actively shapes Chinese industry standards, offers a wide material range (stainless steel, plastic, glass, titanium, ceramic), and provides flexible OEM/ODM services with decades of brand heritage.
@@ -195,16 +253,24 @@ Buyers seeking a manufacturer that actively shapes Chinese industry standards, o
 
 ![Golmate Homepage](assets/golmate-homepage.png)
 
-Founded in 2001, Golmate has 20+ years of thermos manufacturing experience and one of the most complete product lines among Chinese drinkware suppliers. The company employs 300+ staff and produces nearly 5 million pieces annually from its BSCI-audited factory.
+Founded in 2001, Golmate has 20+ years of thermos manufacturing experience and one of the most complete product lines among Chinese drinkware suppliers. Notable clients include Montblanc, Aldi, Lidl, Kaufland, METRO, HEMA, Costco, and Sodimac. European markets account for about 70% of annual revenue.
+
+**Factory and Scale**
+- 300+ staff with BSCI-audited factory in Dongyang, Zhejiang
+- Annual output: nearly 5 million pieces
+- MOQ as low as 1,000 units
+- Guangzhou sales office for client coordination
 
 **Products**
-Bottles, tumblers, mugs, airpots (20+ models), coffee pots (70+ models), water bottles (60+ models), lunch boxes, and kitchenware items. All materials are 100% food-safe and compliant with FDA, REACH, and LFGB standards.
+- Bottles, tumblers, and mugs
+- Airpots (20+ models) and coffee pots (70+ models)
+- Water bottles (60+ models) and lunch boxes
+- Kitchenware items
+- All materials 100% food-safe
 
-**Notable Clients**
-Montblanc, Aldi, Lidl, Kaufland, METRO, HEMA, Costco, and Sodimac. European markets account for about 70% of annual revenue.
-
-**MOQ**
-1,000 units.
+**Certifications**
+- FDA, REACH, and LFGB (food-contact safety)
+- BSCI (social compliance)
 
 **Best For**
 European retailers and brands that need a broad catalog with strong food-safety compliance and a low MOQ for test orders.
@@ -222,13 +288,22 @@ European retailers and brands that need a broad catalog with strong food-safety 
 Founded in 1997, Inoxicon operates from a 10,000 m² factory in Yongkang, China's hardware capital. Originally known for stainless steel kitchen utensils, the company has expanded into tumblers and insulated drinkware. A 5-person chief design team averaging 15 years of experience drives weekly new product launches.
 
 **Factory and Scale**
-All production is handled in-house, which Inoxicon says allows 40% faster delivery than competitors. MOQ starts as low as 500 pieces for current models. Products are priced up to 80% lower than comparable suppliers due to vertical integration.
+- 10,000 m² factory in Yongkang with all production in-house
+- 5 chief designers averaging 15 years of experience; new product series launched weekly
+- 40% faster delivery than competitors due to vertical integration
+- MOQ as low as 500 pieces for current models
+- Up to 80% lower pricing than comparable suppliers
 
 **Products**
-Stainless steel tumblers, mixing bowls, colanders, strainers, splatter screens, food covers, BBQ fry mesh baskets, and stackable kitchen sets. Eco-friendly designs are available for sustainable product lines.
+- Stainless steel tumblers and insulated drinkware
+- Mixing bowls, colanders, and strainers
+- Splatter screens, food covers, and BBQ fry mesh baskets
+- Stackable kitchen sets
+- Eco-friendly designs available
 
 **Certifications**
-ISO 9001 and BSCI certified.
+- ISO 9001
+- BSCI (social compliance)
 
 **Best For**
 Buyers who combine drinkware and kitchenware sourcing and value fast turnaround, low MOQ, and competitive pricing from a single factory.
@@ -246,13 +321,22 @@ Buyers who combine drinkware and kitchenware sourcing and value fast turnaround,
 Founded in 2004, Steel.Hydro has over 20 years of experience in stainless steel drinkware manufacturing. The company positions itself as a full-service B2B partner — covering R&D, product design, manufacturing, quality assurance, decorating, labeling, warehousing, logistics, and after-sales service. Products are sold in 30+ countries and regions.
 
 **Factory and Scale**
-Manufacturing facilities in Zhejiang with a comprehensive stainless steel production hub. Uses food-grade 304/316 stainless steel with double-wall vacuum insulation and precision welding for airtight sealing.
+- Manufacturing facilities in Zhejiang with Shanghai sales office
+- Food-grade 304/316 stainless steel with double-wall vacuum insulation
+- Precision welding for airtight sealing
+- Full-service chain: R&D → design → manufacturing → QA → decorating → labeling → warehousing → logistics → after-sales
+- Products sold in 30+ countries and regions
 
 **Products**
-Stainless steel tumblers, insulated bottles, mugs, food jars, kids bottles, and accessories. All products are BPA-free and FDA-approved. Full OEM/ODM customization — branding, color variations, custom shapes, and design modifications for private-label programs.
+- Stainless steel tumblers and insulated bottles
+- Mugs, food jars, and kids bottles
+- Accessories and customization options
+- All products BPA-free and FDA-approved
+- Full OEM/ODM: branding, color variations, custom shapes, and private-label design
 
 **Certifications**
-FDA approved. BPA-free and rust-resistant product standards.
+- FDA approved
+- BPA-free and rust-resistant standards
 
 **Best For**
 Small-to-mid-size brands looking for a responsive full-service partner with product design support, competitive pricing, and sustainability-focused production.
