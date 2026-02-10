@@ -54,40 +54,43 @@ Brands that need a one-stop partner for multi-material drinkware with strong des
 
 ![Everich Homepage](assets/everich-homepage.png)
 
-Everich has supplied insulated drinkware for over 20 years. The company develops more than 450 new product designs each year and holds 400+ registered patents.
+Everich has supplied insulated drinkware for over 20 years. The company develops more than 450 new product designs each year and holds 400+ registered patents. Notable clients include Walmart, Target, Costco, Lowe's, Amazon, Carrefour, eBay, and Coca-Cola.
 
 **Factory and Scale**
-The Hangzhou-based facility features automated production lines. Everich also operates manufacturing hubs in Thailand and Cambodia. The company holds RCS, GRS, GLF, and ISCC sustainability certifications in addition to FDA and LFGB food-contact approvals.
+The Hangzhou-based headquarters oversees automated production lines across multiple sites. Everich also operates manufacturing hubs in Thailand and Cambodia, giving buyers multi-country sourcing options to manage tariff exposure. A 30+ person R&D team drives product development.
 
 **Products**
 Stainless steel tumblers, sports bottles, protein shakers, can coolers, hard coolers, lunch boxes, kids bottles, pet bowls, coffee series items, wine tumblers, and small kitchen appliances.
 
-**Notable Clients**
-Walmart, Target, Costco, Lowe's, Amazon, Carrefour, eBay, and Coca-Cola.
+**Certifications**
+RCS, GRS, GLF, and ISCC sustainability certifications. FDA and LFGB food-contact approvals. NDA-backed OEM for IP protection.
 
 **Best For**
-Large-volume buyers who need a broad product catalog, strong IP protection (NDA-backed OEM), and multi-country manufacturing to manage tariff exposure.
+Large-volume buyers who need a broad product catalog, strong IP protection, and multi-country manufacturing to manage tariff exposure.
 
 ---
 
-### 3. Haers Drinkware
+### 3. Haers Drinkware (Zhejiang Haers Vacuum Containers Co., Ltd.)
 
 **Official Website:** [www.haers.com](https://www.haers.com/)
 
-**Location:** Yongkang, Zhejiang, China (additional factories in Anhui and Thailand)
+**Location:** Yongkang, Zhejiang, China (additional bases in Lin'an, Anhui, Thailand, and Switzerland)
 
 ![Haers Homepage](assets/haers-homepage.png)
 
-Founded in 1985, Haers is one of the oldest vacuum-flask makers in China with over 25 years of water-bottle manufacturing experience. The company produces stainless steel, titanium, Tritan, and glass drinkware.
+Founded in 1985 in Yongkang, Haers became the first publicly listed Chinese company in the vacuum-bottle industry in 2011 (stock code: 002615). The name "Haers" comes from the English word "health." With 40+ years of history, Haers is one of the most recognized drinkware brands in China. Products are exported to 80+ countries.
+
+**Factory and Scale**
+Five manufacturing bases totaling 290,000 m² with 3,600+ employees. Annual production capacity exceeds 100 million units (250,000 units/day). A recent $300 million investment expanded plants in Yongkang and Thailand, making Haers the largest stainless steel water bottle manufacturer in the world by output.
 
 **Products**
-Tumblers, vacuum flasks, smart bottles, coffee mugs, wine tumblers, beer growlers, kids bottles, food containers, and electric kettles.
+Stainless steel tumblers, vacuum flasks, titanium bottles, Tritan bottles, smart bottles, coffee mugs, wine tumblers, beer growlers, kids bottles, food containers, and electric kettles. Full OEM/ODM customization through the HAERS ID system — logo engraving, surface treatments, custom lids, and branded packaging.
 
-**OEM/ODM**
-Haers offers full customization — logo engraving, surface treatments, custom lids, and branded packaging through its HAERS ID system.
+**Certifications**
+ISO 9001, BRCGS, FDA, LFGB, REACH, RCS, and EPR. Over 50 international and 200 domestic certifications. 684 valid patents.
 
 **Best For**
-Buyers looking for a well-established brand manufacturer with a deep product portfolio across multiple materials, including titanium and smart bottles.
+Buyers looking for the world's largest vacuum-flask manufacturer with a publicly listed track record, multi-material capability (including titanium), and global production bases.
 
 ---
 
@@ -123,16 +126,19 @@ High-volume wholesale buyers who need massive production capacity, competitive p
 
 ![KingStar Homepage](assets/kingstar-homepage.png)
 
-KingStar operates a 30,000 m² smart factory with 900+ staff, representing China's Industry 4.0 manufacturing model — automated guided vehicles, robotic arms, and 5G-enabled production control. The company has 20+ years of R&D and engineering experience.
+Founded in 2002, KingStar is a leading vacuum-insulated drinkware manufacturer headquartered in Shanghai. The company represents China's Industry 4.0 smart-factory model, with automated guided vehicles, robotic arms, and 5G-enabled production control. The R&D team of 38 engineers includes former staff from Yeti, Thermos, Tiger, and Hydro Flask.
+
+**Factory and Scale**
+A 30,000 m² smart factory with 900+ employees. In-house automated production lines for shaping, cutting, necking, stamping, injection, powder coating, painting, and vacuum testing. Inquiry response within 24 hours, sample delivery in 7 days, and order completion in 28 days.
 
 **Products**
-Custom stainless steel water bottles, tumblers, and food containers. All products are BPA-free, food-grade, and eco-friendly.
+Custom stainless steel water bottles, tumblers, flasks, coffee cups, travel mugs, coffee pots, wine bottles, food containers, beer pints, and beer growlers. All products are BPA-free and food-grade. Full OEM/ODM — custom shapes, lids, colors, logos, and private mold development.
 
-**OEM/ODM**
-Full custom cup and bottle programs with private mold development.
+**Certifications**
+ISO 9001, FDA, LFGB, and RoHS. Third-party testing through SGS, Intertek, and Bureau Veritas.
 
 **Best For**
-Brands that value smart-factory traceability, automation-driven consistency, and Shanghai-based project management.
+Brands that value smart-factory traceability, automation-driven consistency, fast sample turnaround, and Shanghai-based project management.
 
 ---
 
@@ -205,7 +211,7 @@ European retailers and brands that need a broad catalog with strong food-safety 
 
 ---
 
-### 9. Inoxicon
+### 9. Inoxicon (Yongkang Dongxin Electrical Appliance Co., Ltd.)
 
 **Official Website:** [inoxiconkitchen.com](https://inoxiconkitchen.com/)
 
@@ -213,16 +219,19 @@ European retailers and brands that need a broad catalog with strong food-safety 
 
 ![Inoxicon Homepage](assets/inoxicon-homepage.png)
 
-Founded in 1997, Inoxicon operates a 10,000 m² factory in Yongkang, China's hardware capital. The company is best known for stainless steel kitchen utensils but also supplies tumblers and drinkware components.
+Founded in 1997, Inoxicon operates from a 10,000 m² factory in Yongkang, China's hardware capital. Originally known for stainless steel kitchen utensils, the company has expanded into tumblers and insulated drinkware. A 5-person chief design team averaging 15 years of experience drives weekly new product launches.
+
+**Factory and Scale**
+All production is handled in-house, which Inoxicon says allows 40% faster delivery than competitors. MOQ starts as low as 500 pieces for current models. Products are priced up to 80% lower than comparable suppliers due to vertical integration.
+
+**Products**
+Stainless steel tumblers, mixing bowls, colanders, strainers, splatter screens, food covers, BBQ fry mesh baskets, and stackable kitchen sets. Eco-friendly designs are available for sustainable product lines.
 
 **Certifications**
 ISO 9001 and BSCI certified.
 
-**Key Advantage**
-Inoxicon claims 40% faster delivery than competitors for stainless steel products, thanks to vertically integrated in-house production. The company launches new product series weekly.
-
 **Best For**
-Buyers who combine drinkware and kitchenware sourcing and value fast turnaround from a single factory.
+Buyers who combine drinkware and kitchenware sourcing and value fast turnaround, low MOQ, and competitive pricing from a single factory.
 
 ---
 
@@ -230,17 +239,23 @@ Buyers who combine drinkware and kitchenware sourcing and value fast turnaround 
 
 **Official Website:** [steelhydro.com](https://steelhydro.com/)
 
-**Location:** China
+**Location:** 1688 Longwu Road, Shanghai (sales office) / Zhejiang (factory)
 
 ![Steelhydro Homepage](assets/steelhydro-homepage.png)
 
-Steel.Hydro is a B2B-focused manufacturer of stainless steel tumblers with a strong emphasis on customization and sustainability. The company uses high-grade stainless steel and offers branding, color variations, and design modifications for private-label programs.
+Founded in 2004, Steel.Hydro has over 20 years of experience in stainless steel drinkware manufacturing. The company positions itself as a full-service B2B partner — covering R&D, product design, manufacturing, quality assurance, decorating, labeling, warehousing, logistics, and after-sales service. Products are sold in 30+ countries and regions.
+
+**Factory and Scale**
+Manufacturing facilities in Zhejiang with a comprehensive stainless steel production hub. Uses food-grade 304/316 stainless steel with double-wall vacuum insulation and precision welding for airtight sealing.
 
 **Products**
-Stainless steel tumblers and insulated bottles with full OEM/ODM customization.
+Stainless steel tumblers, insulated bottles, mugs, food jars, kids bottles, and accessories. All products are BPA-free and FDA-approved. Full OEM/ODM customization — branding, color variations, custom shapes, and design modifications for private-label programs.
+
+**Certifications**
+FDA approved. BPA-free and rust-resistant product standards.
 
 **Best For**
-Small-to-mid-size brands looking for a responsive customization partner with competitive pricing and sustainability-conscious production.
+Small-to-mid-size brands looking for a responsive full-service partner with product design support, competitive pricing, and sustainability-focused production.
 
 ---
 
@@ -275,14 +290,14 @@ Factories near Ningbo, Shanghai, or Shenzhen ports can cut inland freight costs.
 |------|---------|----------|-------------|--------------|----------------|
 | 1 | **Maxlink (Syloon)** | Ningbo, Zhejiang | 40,000 m² | Multi-material one-stop sourcing, 70-person design team | ISO 9001, BSCI, SEDEX, SCAN |
 | 2 | **Everich** | Hangzhou, Zhejiang | Multi-site (CN, TH, KH) | 450+ new designs/year, 400+ patents | RCS, GRS, FDA, LFGB |
-| 3 | **Haers** | Yongkang, Zhejiang | Multi-site (CN, TH) | 40+ years heritage, titanium & smart bottles | Industry standard |
+| 3 | **Haers** | Yongkang, Zhejiang | 290,000 m² (5 bases) | World's largest, 100M+ units/year, 684 patents | ISO 9001, BRCGS, FDA, LFGB |
 | 4 | **Ansheng (Ansune)** | Yongkang, Zhejiang | 340,000 m² | 65M units/year, Malaysia factory | ISO, CNAS |
-| 5 | **KingStar** | Shanghai / Jinhua | 30,000 m² | Industry 4.0 smart factory, 5G production | BPA-free, food-grade |
+| 5 | **KingStar** | Shanghai / Jinhua | 30,000 m² | Industry 4.0 smart factory, ex-Yeti/Thermos R&D team | ISO 9001, FDA, LFGB, RoHS |
 | 6 | **Cayi** | Wuyi, Zhejiang | 120,000 m² | A-share listed, 2.4M units/month capacity | ISO 9001:2015 |
 | 7 | **Fuguang** | Hefei, Anhui | Large-scale | 400+ patents, national standard drafter, multi-material | ISO certified |
 | 8 | **Golmate** | Guangzhou / Dongyang | Mid-scale | Europe-focused (70% revenue), 1,000 MOQ | FDA, REACH, LFGB |
-| 9 | **Inoxicon** | Yongkang, Zhejiang | 10,000 m² | 40% faster delivery, kitchen + drinkware | ISO 9001, BSCI |
-| 10 | **Steel.Hydro** | China | — | B2B customization focus, eco-friendly | International standards |
+| 9 | **Inoxicon** | Yongkang, Zhejiang | 10,000 m² | 40% faster delivery, 500 MOQ, kitchen + drinkware | ISO 9001, BSCI |
+| 10 | **Steel.Hydro** | Shanghai / Zhejiang | Zhejiang hub | Full-service B2B, 20+ years, 30+ countries | FDA, BPA-free |
 
 ## FAQs About Best Tumbler Manufacturers in China
 
