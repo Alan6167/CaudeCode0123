@@ -1,6 +1,6 @@
 # Screenshot Guide
 
-Run the commands below to capture all 10 homepage screenshots for this article.
+Run the commands below to capture all 8 homepage screenshots for this article.
 
 ## Prerequisites
 
@@ -25,10 +25,8 @@ python3 scripts/screenshot_website.py https://www.ybj-printing.com/ "$ASSETS/ybj
 python3 scripts/screenshot_website.py https://www.bookprintingchina.com/ "$ASSETS/bookprintingchina-homepage.png"
 python3 scripts/screenshot_website.py https://www.chinaprinting4u.com/ "$ASSETS/chinaprinting4u-homepage.png"
 python3 scripts/screenshot_website.py https://www.lionpaper-istyle.com/ "$ASSETS/lionpaper-homepage.png"
-python3 scripts/screenshot_website.py https://jabaygames.com/ "$ASSETS/jabay-homepage.png"
 python3 scripts/screenshot_website.py https://www.xqcprinting.com/ "$ASSETS/xinqicai-homepage.png"
 python3 scripts/screenshot_website.py https://www.liyangprinting.com/ "$ASSETS/liyang-homepage.png"
-python3 scripts/screenshot_website.py https://global.lybookprinting.com/ "$ASSETS/longyin-homepage.png"
 python3 scripts/screenshot_website.py https://lzjhy.com/ "$ASSETS/jinhao-homepage.png"
 ```
 
@@ -41,10 +39,8 @@ After execution, the `assets/` directory should contain:
 - bookprintingchina-homepage.png
 - chinaprinting4u-homepage.png
 - lionpaper-homepage.png
-- jabay-homepage.png
 - xinqicai-homepage.png
 - liyang-homepage.png
-- longyin-homepage.png
 - jinhao-homepage.png
 
 ## Notes
