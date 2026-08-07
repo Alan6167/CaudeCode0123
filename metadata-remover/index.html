@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metadata Remover — Remove EXIF &amp; GPS Data from Photos (Free, No Upload)</title>
+  <meta name="description" content="Free online metadata remover. Strip EXIF, GPS location, and hidden data from JPG, PNG, and WebP photos — 100% in your browser, lossless quality, no upload, no sign-up.">
+  <meta name="theme-color" content="#f4f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1422" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Metadata Remover — Remove EXIF &amp; GPS Data from Photos">
+  <meta property="og:description" content="Strip EXIF, GPS location, and hidden data from your photos. 100% in your browser — files never leave your device. Free, lossless, no sign-up.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e7a6d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Metadata Remover",
+    "description": "Free online tool that removes EXIF, GPS, and other metadata from JPG, PNG, and WebP photos directly in the browser. No upload, lossless quality.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any (web browser)",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Removes EXIF, XMP, IPTC metadata and GPS location",
+      "100% client-side processing — photos never leave the device",
+      "Lossless — image data is never re-encoded",
+      "Batch cleaning with ZIP download",
+      "Supports JPG, PNG, and WebP"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is photo metadata (EXIF data)?",
+        "acceptedAnswer": { "@type": "Answer", "text": "EXIF metadata is hidden information that cameras and phones embed in every photo: GPS coordinates of where it was taken, the exact date and time, your camera or phone model, lens details, and the software used to edit it. It travels with the file when you share it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can people really see where a photo was taken?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. If a photo still contains GPS metadata, anyone who receives the file can read the exact coordinates — often precise enough to identify your home address. Removing metadata before sharing prevents this." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does removing metadata reduce image quality?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. This tool never decodes or re-encodes your image. It removes only the metadata sections of the file, so the picture data stays bit-for-bit identical to the original — zero quality loss." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my photos uploaded to a server?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Everything runs in JavaScript inside your browser. Your photos never leave your device — you can even disconnect from the internet after the page loads and the tool keeps working." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which file formats are supported?",
+        "acceptedAnswer": { "@type": "Answer", "text": "JPG/JPEG, PNG, and WebP. HEIC (the iPhone default) is not supported yet — set Settings > Camera > Formats to Most Compatible, or share the photo as JPEG first." }
+      },
+      {
+        "@type": "Question",
+        "name": "What exactly gets removed?",
+        "acceptedAnswer": { "@type": "Answer", "text": "EXIF data (including GPS location, camera and lens details, timestamps), XMP and IPTC/Photoshop data, embedded comments, and hidden data appended after the image ends (such as motion-photo video). Color profiles are kept so your photo looks exactly the same." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I remove metadata from photos on iPhone or Android?",
+        "acceptedAnswer": { "@type": "Answer", "text": "This tool works in your phone's browser — open the page, tap the drop area, and pick photos. iOS can also remove location only (share sheet > Options > toggle Location off). On Android, Google Photos can remove location before sharing, but full EXIF removal usually needs a tool like this one." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is there an option to keep the orientation tag?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Phones often store photos rotated and use a tiny orientation tag to display them upright. Removing it can make photos appear sideways in some apps. The tag contains no personal information, so keeping it is recommended — but you can disable it for a fully metadata-free file." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this metadata remover really free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — free, with no account, no watermarks, and no file limits. Because processing happens on your own device, there are no server costs to pass on." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        Metadata Remover
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Remove Metadata from Photos</h1>
+      <p class="tagline">
+        Strip EXIF data, GPS location, and hidden info from your photos before you share them.
+        <strong>100% in your browser</strong> — your files never leave your device.
+      </p>
+      <ul class="trust-badges">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>No upload — fully private</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Lossless quality</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Free, no sign-up</li>
+      </ul>
+    </section>
+
+    <section class="tool container" aria-label="Metadata removal tool">
+      <div class="dropzone" id="dropzone" role="button" tabindex="0"
+           aria-label="Add photos: drop them here, click to browse, or paste from clipboard">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5a2 2 0 0 0-2.8 0L6 20"/></svg>
+        <span class="dz-title dz-pointer">Drop photos here</span>
+        <span class="dz-title dz-touch">Tap to choose photos</span>
+        <span class="dz-sub dz-pointer">or click to browse — JPG, PNG, WebP</span>
+        <span class="dz-sub dz-touch">JPG, PNG, WebP — cleaned right on your phone</span>
+        <span class="dz-hint dz-pointer">Metadata is removed instantly. You can also paste images from the clipboard.</span>
+        <span class="dz-hint dz-touch">Metadata is removed instantly, right on your device.</span>
+      </div>
+      <input type="file" id="file-input" class="visually-hidden"
+             accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple>
+
+      <div class="tool-options">
+        <input type="checkbox" id="keep-orientation" checked>
+        <label for="keep-orientation">
+          <span class="option-name">Keep orientation tag</span> — prevents photos from displaying sideways. It contains no personal data. Untick for a 100% metadata-free file.
+        </label>
+      </div>
+
+      <div class="batch-bar" id="batch-bar" hidden>
+        <span class="batch-summary" id="batch-summary"></span>
+        <span class="batch-actions">
+          <button class="btn btn-primary" id="download-all" hidden>Download all (.zip)</button>
+          <button class="btn btn-ghost" id="clear-all">Clear all</button>
+        </span>
+      </div>
+
+      <ul class="file-list" id="file-list"></ul>
+      <p class="visually-hidden" id="status-live" role="status" aria-live="polite"></p>
+
+      <noscript>
+        <span class="noscript-warning">This tool needs JavaScript — that's what lets it clean your photos locally, without uploading them anywhere.</span>
+      </noscript>
+    </section>
+
+    <section class="section container" id="privacy">
+      <h2>Your photos never leave this page</h2>
+      <p class="section-sub">Most online metadata removers upload your files to their servers — the very thing a privacy tool shouldn't do. This one works differently.</p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          <h3>No uploads, ever</h3>
+          <p>All processing happens in your browser using JavaScript. Turn off your internet after loading the page — it still works. There is no server to trust, because none is involved.</p>
+        </article>
+        <article class="feature-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 5-5"/></svg>
+          <h3>Lossless — pixel-perfect</h3>
+          <p>Your image is never decoded or re-compressed. Only the metadata sections are removed, so picture quality stays bit-for-bit identical to the original.</p>
+        </article>
+        <article class="feature-card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8c-2.2-4.5-8-3.5-8 1 0 3.5 4.5 6.8 8 10 3.5-3.2 8-6.5 8-10 0-4.5-5.8-5.5-8-1z"/></svg>
+          <h3>Free, no strings</h3>
+          <p>No account, no watermark, no file limits, no tracking. Clean one photo or a hundred — batch cleaning and ZIP download included.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="how-it-works">
+      <h2>How it works</h2>
+      <p class="section-sub">From photo to clean copy in seconds — two clicks, three steps.</p>
+      <ol class="steps">
+        <li>
+          <h3>Add your photos</h3>
+          <p>Drag &amp; drop, click to browse, or paste from the clipboard. JPG, PNG, and WebP are supported, in any quantity.</p>
+        </li>
+        <li>
+          <h3>See what was hiding</h3>
+          <p>The tool shows the metadata found in each photo — GPS location, camera model, timestamps — and removes it instantly, right on your device.</p>
+        </li>
+        <li>
+          <h3>Download the clean copy</h3>
+          <p>Save photos one by one, or grab everything at once as a ZIP. Originals on your device are never modified.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" id="what-is-metadata">
+      <h2>What's hiding in your photos?</h2>
+      <p class="section-sub">Every photo from a phone or camera carries invisible metadata. When you share the file, all of it goes along:</p>
+      <ul class="metadata-list">
+        <li><strong>GPS location</strong> — exact coordinates of where the photo was taken, often precise enough to reveal your home address.</li>
+        <li><strong>Date and time</strong> — when the photo was taken, down to the second, revealing your routines and whereabouts.</li>
+        <li><strong>Device details</strong> — your phone or camera make and model, and sometimes the lens and serial number.</li>
+        <li><strong>Software traces</strong> — which apps edited the photo, and IPTC/XMP records added by editing tools.</li>
+        <li><strong>Hidden extras</strong> — some phones append extra data after the image itself, such as embedded video clips from motion photos. This tool strips those too.</li>
+      </ul>
+    </section>
+
+    <section class="section container" id="faq">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is photo metadata (EXIF data)?</summary>
+          <div class="faq-answer"><p>EXIF metadata is hidden information that cameras and phones embed in every photo: GPS coordinates of where it was taken, the exact date and time, your camera or phone model, lens details, and the software used to edit it. It travels with the file when you share it — unless you remove it first.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can people really see where a photo was taken?</summary>
+          <div class="faq-answer"><p>Yes. If a photo still contains GPS metadata, anyone who receives the file can read the exact coordinates with free tools — often precise enough to identify your home address. Most social networks strip metadata on upload, but files shared by email, cloud drive, or messaging apps usually keep it.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Does removing metadata reduce image quality?</summary>
+          <div class="faq-answer"><p>No. This tool never decodes or re-encodes your image. It parses the file structure and removes only the metadata sections, so the picture data stays bit-for-bit identical to the original. Files usually get a little smaller, never worse.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Are my photos uploaded to a server?</summary>
+          <div class="faq-answer"><p>No. Everything runs in JavaScript inside your browser. Your photos never leave your device — you can even disconnect from the internet after the page loads and the tool keeps working. That's the whole point: a privacy tool shouldn't ask you to hand over your files.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Which file formats are supported?</summary>
+          <div class="faq-answer"><p>JPG/JPEG, PNG, and WebP — the formats used by virtually every website and messaging app. HEIC (the iPhone camera default) is not supported yet: set Settings → Camera → Formats → Most Compatible, or share the photo as JPEG first.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What exactly gets removed?</summary>
+          <div class="faq-answer"><p>EXIF data (including GPS location, camera and lens details, timestamps), XMP and IPTC/Photoshop data, embedded comments, and hidden data appended after the image ends — such as the video clip inside some motion photos. Color profiles (ICC) are kept so your photo looks exactly the same everywhere.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I remove metadata from photos on iPhone or Android?</summary>
+          <div class="faq-answer"><p>This page works in your phone's browser — open it, tap the drop area, and pick photos from your gallery. iOS can natively remove location only (share sheet → Options → toggle Location off). On Android, Google Photos can strip location before sharing, but removing the full EXIF record usually requires a tool like this one.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Why is there an option to keep the orientation tag?</summary>
+          <div class="faq-answer"><p>Phones often save photos rotated and rely on a tiny orientation tag to display them upright. Strip it, and some apps show the photo sideways. The tag is a single number with zero personal information, so keeping it is recommended — but purists can untick the option for a fully metadata-free file.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this metadata remover really free?</summary>
+          <div class="faq-answer"><p>Yes — free, with no account, no watermarks, and no file limits. Because processing happens on your own device, there are no server costs to pass on.</p></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Metadata Remover</strong> — remove EXIF &amp; GPS data from photos, privately.</p>
+      <p>Runs entirely in your browser · No uploads · No cookies · No tracking</p>
+    </div>
+  </footer>
+
+  <template id="file-card-template">
+    <li class="file-card">
+      <div class="file-card-main">
+        <img class="thumb" alt="">
+        <div class="file-info">
+          <p class="file-name"></p>
+          <p class="file-stats"></p>
+          <div class="badges"></div>
+        </div>
+        <div class="file-actions">
+          <a class="btn btn-primary btn-download" hidden>Download</a>
+        </div>
+      </div>
+      <details class="file-details" hidden>
+        <summary>What was found &amp; removed</summary>
+        <div class="details-body"></div>
+      </details>
+    </li>
+  </template>
+
+  <script src="js/cleaners.js"></script>
+  <script src="js/exif-reader.js"></script>
+  <script src="js/zip.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
