@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Metadata Remover — Remove EXIF &amp; GPS Data from Photos (Free, No Upload)</title>
-  <meta name="description" content="Free online metadata remover. Strip EXIF, GPS location, and hidden data from JPG, PNG, and WebP photos — 100% in your browser, lossless quality, no upload, no sign-up.">
+  <title>AI Metadata Remover — Strip EXIF, GPS &amp; AI Generation Data from Images (Free, No Upload)</title>
+  <meta name="description" content="Free AI metadata remover. Strip EXIF, GPS location, embedded AI prompts (Stable Diffusion, ComfyUI), and C2PA Content Credentials from JPG, PNG, and WebP images — 100% in your browser, lossless, no upload.">
   <meta name="theme-color" content="#f4f7fa" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d1422" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Metadata Remover — Remove EXIF &amp; GPS Data from Photos">
-  <meta property="og:description" content="Strip EXIF, GPS location, and hidden data from your photos. 100% in your browser — files never leave your device. Free, lossless, no sign-up.">
+  <meta property="og:title" content="AI Metadata Remover — Strip EXIF, GPS &amp; AI Generation Data from Images">
+  <meta property="og:description" content="Remove EXIF, GPS location, embedded AI prompts, and Content Credentials from your images. 100% in your browser — files never leave your device. Free, lossless, no sign-up.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e7a6d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/styles.css">
@@ -16,13 +16,15 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Metadata Remover",
-    "description": "Free online tool that removes EXIF, GPS, and other metadata from JPG, PNG, and WebP photos directly in the browser. No upload, lossless quality.",
+    "name": "AI Metadata Remover",
+    "description": "Free online tool that removes EXIF, GPS, embedded AI generation prompts, and C2PA Content Credentials from JPG, PNG, and WebP images directly in the browser. No upload, lossless quality.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "Any (web browser)",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "featureList": [
       "Removes EXIF, XMP, IPTC metadata and GPS location",
+      "Removes embedded AI generation prompts and workflows (Stable Diffusion, ComfyUI, InvokeAI)",
+      "Removes C2PA Content Credentials (JPEG APP11, PNG caBX, WebP)",
       "100% client-side processing — photos never leave the device",
       "Lossless — image data is never re-encoded",
       "Batch cleaning with ZIP download",
@@ -77,6 +79,21 @@
       },
       {
         "@type": "Question",
+        "name": "Do AI-generated images contain metadata?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Often more than photos. Stable Diffusion and ComfyUI PNGs store your full prompt, negative prompt, seed, sampler settings, and model hash in plain text — anyone can drag the file into their own UI and copy your workflow. DALL-E and Adobe Firefly embed C2PA Content Credentials declaring the image AI-generated. This tool shows what's embedded and removes it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can it remove C2PA Content Credentials?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. C2PA manifests don't live in the EXIF block — they use format-specific containers (JPEG APP11, PNG caBX chunks), which is why generic EXIF removers often leave them behind. This tool strips them in all supported formats. Note that AI-disclosure rules such as the EU AI Act may require keeping these markers for content distributed in some regions — consider where your image is going." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does removing metadata remove invisible AI watermarks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Pixel-level watermarks such as Google's SynthID are woven into the image itself, not stored as metadata, so they survive any metadata removal. This tool removes metadata only — embedded prompts, EXIF, XMP, and Content Credentials — and makes no claims beyond that." }
+      },
+      {
+        "@type": "Question",
         "name": "Is this metadata remover really free?",
         "acceptedAnswer": { "@type": "Answer", "text": "Yes — free, with no account, no watermarks, and no file limits. Because processing happens on your own device, there are no server costs to pass on." }
       }
@@ -90,7 +107,7 @@
     <div class="container">
       <a class="brand" href="./">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-        Metadata Remover
+        AI Metadata Remover
       </a>
       <nav class="site-nav" aria-label="Main">
         <a href="#how-it-works">How it works</a>
@@ -101,9 +118,9 @@
 
   <main>
     <section class="hero container">
-      <h1>Remove Metadata from Photos</h1>
+      <h1>Remove Metadata from Photos &amp; AI Images</h1>
       <p class="tagline">
-        Strip EXIF data, GPS location, and hidden info from your photos before you share them.
+        Strip EXIF data, GPS location, embedded AI prompts, and Content Credentials before you share.
         <strong>100% in your browser</strong> — your files never leave your device.
       </p>
       <ul class="trust-badges">
@@ -182,7 +199,7 @@
         </li>
         <li>
           <h3>See what was hiding</h3>
-          <p>The tool shows the metadata found in each photo — GPS location, camera model, timestamps — and removes it instantly, right on your device.</p>
+          <p>The tool shows the metadata found in each image — GPS location, camera model, timestamps, embedded AI prompts — and removes it instantly, right on your device.</p>
         </li>
         <li>
           <h3>Download the clean copy</h3>
@@ -192,13 +209,15 @@
     </section>
 
     <section class="section container" id="what-is-metadata">
-      <h2>What's hiding in your photos?</h2>
-      <p class="section-sub">Every photo from a phone or camera carries invisible metadata. When you share the file, all of it goes along:</p>
+      <h2>What's hiding in your images?</h2>
+      <p class="section-sub">Every image from a phone, camera, or AI generator carries invisible metadata. When you share the file, all of it goes along:</p>
       <ul class="metadata-list">
         <li><strong>GPS location</strong> — exact coordinates of where the photo was taken, often precise enough to reveal your home address.</li>
+        <li><strong>AI generation data</strong> — Stable Diffusion and ComfyUI PNGs carry your full prompt, seed, and workflow in plain text. Anyone can drop the file into their own UI and copy your exact settings.</li>
+        <li><strong>Content Credentials (C2PA)</strong> — provenance manifests embedded by DALL-E, Adobe Firefly, and others, which platforms read to label posts "Made with AI". They live outside the EXIF block, so generic EXIF removers often miss them.</li>
         <li><strong>Date and time</strong> — when the photo was taken, down to the second, revealing your routines and whereabouts.</li>
         <li><strong>Device details</strong> — your phone or camera make and model, and sometimes the lens and serial number.</li>
-        <li><strong>Software traces</strong> — which apps edited the photo, and IPTC/XMP records added by editing tools.</li>
+        <li><strong>Software traces</strong> — which apps edited the image, and IPTC/XMP records added by editing tools.</li>
         <li><strong>Hidden extras</strong> — some phones append extra data after the image itself, such as embedded video clips from motion photos. This tool strips those too.</li>
       </ul>
     </section>
@@ -239,6 +258,18 @@
           <div class="faq-answer"><p>Phones often save photos rotated and rely on a tiny orientation tag to display them upright. Strip it, and some apps show the photo sideways. The tag is a single number with zero personal information, so keeping it is recommended — but purists can untick the option for a fully metadata-free file.</p></div>
         </details>
         <details class="faq-item">
+          <summary>Do AI-generated images contain metadata?</summary>
+          <div class="faq-answer"><p>Often more than photos. Stable Diffusion and ComfyUI PNGs store your full prompt, negative prompt, seed, sampler settings, and model hash in plain text — anyone can drag the file into their own UI and copy your workflow. DALL-E and Adobe Firefly embed C2PA Content Credentials declaring the image AI-generated, and stock platforms scan for these signatures. This tool shows you exactly what's embedded, then removes it.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can it remove C2PA Content Credentials?</summary>
+          <div class="faq-answer"><p>Yes. C2PA manifests don't live in the EXIF block — they use format-specific containers (JPEG APP11 segments, PNG caBX chunks), which is why generic EXIF removers often leave them behind. This tool strips them in all supported formats. One honest note: AI-disclosure rules such as the EU AI Act expect AI-generated content distributed in some regions to keep its disclosure markers — consider where your image is going before removing them.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Does removing metadata remove invisible AI watermarks?</summary>
+          <div class="faq-answer"><p>No. Pixel-level watermarks such as Google's SynthID are woven into the image pixels themselves, not stored as metadata, so they survive any metadata removal. This tool removes metadata only — embedded prompts, EXIF, XMP, IPTC, and Content Credentials — and makes no claims beyond that.</p></div>
+        </details>
+        <details class="faq-item">
           <summary>Is this metadata remover really free?</summary>
           <div class="faq-answer"><p>Yes — free, with no account, no watermarks, and no file limits. Because processing happens on your own device, there are no server costs to pass on.</p></div>
         </details>
@@ -248,7 +279,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p><strong>Metadata Remover</strong> — remove EXIF &amp; GPS data from photos, privately.</p>
+      <p><strong>AI Metadata Remover</strong> — remove EXIF, GPS &amp; AI generation data from images, privately.</p>
       <p>Runs entirely in your browser · No uploads · No cookies · No tracking</p>
     </div>
   </footer>

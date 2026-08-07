@@ -124,6 +124,8 @@
     card.badges.textContent = '';
     var count = foundCount(item);
     if (item.meta.gps) card.badges.appendChild(badge('GPS location removed', 'danger'));
+    if (item.meta.ai || item.meta.aiFlag) card.badges.appendChild(badge('AI generation data removed', 'ai'));
+    if (item.meta.contentCredentials) card.badges.appendChild(badge('Content Credentials removed', 'ai'));
     if (count > 0 || item.result.removed.length > 0) {
       card.badges.appendChild(badge(count > 0 ? count + ' metadata item' + (count === 1 ? '' : 's') + ' removed' : 'Metadata removed', 'ok'));
     } else {
@@ -148,6 +150,17 @@
       gps.className = 'gps-warning';
       gps.textContent = 'This photo contained your exact location: ' + item.meta.gps.lat + ', ' + item.meta.gps.lon + '. It has been removed.';
       body.appendChild(gps);
+    }
+
+    if (item.meta.ai && item.meta.ai.prompt) {
+      var promptLabel = document.createElement('p');
+      promptLabel.className = 'prompt-label';
+      promptLabel.textContent = 'Embedded generation prompt (' + item.meta.ai.tool + ') — anyone with this file could read it. Removed:';
+      body.appendChild(promptLabel);
+      var promptBox = document.createElement('div');
+      promptBox.className = 'prompt-preview';
+      promptBox.textContent = item.meta.ai.prompt.slice(0, 500) + (item.meta.ai.prompt.length > 500 ? ' …' : '');
+      body.appendChild(promptBox);
     }
 
     if (item.meta.fields.length) {

@@ -15,6 +15,14 @@ var Cleaners = (function () {
     return true;
   }
 
+  function findAscii(bytes, from, to, str) {
+    var max = Math.min(to, bytes.length) - str.length;
+    for (var i = from; i <= max; i++) {
+      if (ascii(bytes, i, str)) return true;
+    }
+    return false;
+  }
+
   function concat(parts) {
     var total = 0;
     for (var i = 0; i < parts.length; i++) total += parts[i].length;
@@ -56,6 +64,7 @@ var Cleaners = (function () {
       if (ascii(bytes, off + 4, 'http://ns.adobe.com/xap/')) return 'XMP data';
       return 'APP1 data';
     }
+    if (marker === 0xEB && findAscii(bytes, off + 4, off + 44, 'jumb')) return 'Content Credentials (C2PA)';
     if (marker === 0xED) return 'IPTC / Photoshop data';
     if (marker === 0xFE) return 'Comment';
     if (marker === 0xE2 && ascii(bytes, off + 4, 'MPF')) return 'Multi-picture data';
@@ -133,7 +142,7 @@ var Cleaners = (function () {
   /* ----------------------------------------------------------------- PNG */
 
   var PNG_SIG = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
-  var PNG_DROP = { tEXt: 'Text metadata', zTXt: 'Compressed text metadata', iTXt: 'International text metadata', eXIf: 'EXIF data', tIME: 'Last-modified time' };
+  var PNG_DROP = { tEXt: 'Text metadata', zTXt: 'Compressed text metadata', iTXt: 'International text metadata', eXIf: 'EXIF data', tIME: 'Last-modified time', caBX: 'Content Credentials (C2PA)' };
 
   function cleanPng(bytes) {
     for (var s = 0; s < 8; s++) if (bytes[s] !== PNG_SIG[s]) return null;
@@ -174,8 +183,11 @@ var Cleaners = (function () {
       var padded = size + (size & 1);
       var chunkEnd = off + 8 + padded;
       if (off + 8 + size > bytes.length) break;
-      if (fourcc === 'EXIF' || fourcc === 'XMP ') {
-        removed.push({ label: fourcc === 'EXIF' ? 'EXIF data' : 'XMP data', size: 8 + size });
+      if (fourcc === 'EXIF' || fourcc === 'XMP ' || fourcc === 'C2PA') {
+        removed.push({
+          label: fourcc === 'EXIF' ? 'EXIF data' : fourcc === 'C2PA' ? 'Content Credentials (C2PA)' : 'XMP data',
+          size: 8 + size
+        });
       } else {
         var copy = new Uint8Array(bytes.subarray(off, Math.min(chunkEnd, bytes.length)));
         if (fourcc === 'VP8X' && copy.length >= 9) copy[8] &= ~(0x08 | 0x04); // clear EXIF + XMP flags

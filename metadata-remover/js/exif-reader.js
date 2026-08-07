@@ -38,6 +38,34 @@ var MetaReader = (function () {
     return true;
   }
 
+  function findAscii(bytes, from, to, str) {
+    var max = Math.min(to, bytes.length) - str.length;
+    for (var i = from; i <= max; i++) {
+      if (ascii(bytes, i, str)) return true;
+    }
+    return false;
+  }
+
+  function decodeText(bytes, from, to, utf8) {
+    try {
+      return new TextDecoder(utf8 ? 'utf-8' : 'latin1').decode(bytes.subarray(from, Math.min(to, bytes.length)));
+    } catch (e) { return ''; }
+  }
+
+  // PNG text keywords that AI generators use to store prompts and workflows.
+  var AI_TEXT_KEYS = {
+    parameters: 'Stable Diffusion WebUI',
+    prompt: 'ComfyUI',
+    workflow: 'ComfyUI',
+    'sd-metadata': 'InvokeAI',
+    invokeai_metadata: 'InvokeAI',
+    Dream: 'InvokeAI'
+  };
+
+  function emptyMeta() {
+    return { fields: [], extras: [], gps: null, orientation: null, ai: null, aiFlag: false, contentCredentials: false };
+  }
+
   function readValues(dv, base, entryOff, le) {
     var type = dv.getUint16(entryOff + 2, le);
     var count = dv.getUint32(entryOff + 4, le);
@@ -147,7 +175,7 @@ var MetaReader = (function () {
   /* ------------------------------------------------- container scanners */
 
   function readJpeg(bytes) {
-    var meta = { fields: [], extras: [], gps: null, orientation: null };
+    var meta = emptyMeta();
     var dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
     var off = 2;
     while (off + 4 <= bytes.length) {
@@ -165,7 +193,12 @@ var MetaReader = (function () {
         if (tiff.gps) meta.gps = tiff.gps;
         if (tiff.orientation) meta.orientation = tiff.orientation;
       } else if (marker === 0xE1 && ascii(bytes, off + 4, 'http://ns.adobe.com/xap/')) {
-        meta.extras.push('XMP data (' + fmtSize(len) + ')');
+        var aiMark = findAscii(bytes, off + 4, off + 2 + len, 'trainedAlgorithmicMedia');
+        if (aiMark) meta.aiFlag = true;
+        meta.extras.push('XMP data' + (aiMark ? ' — AI-generated marker' : '') + ' (' + fmtSize(len) + ')');
+      } else if (marker === 0xEB && findAscii(bytes, off + 4, off + 44, 'jumb')) {
+        meta.contentCredentials = true;
+        meta.extras.push('Content Credentials — C2PA (' + fmtSize(len) + ')');
       } else if (marker === 0xED) {
         meta.extras.push('IPTC / Photoshop data (' + fmtSize(len) + ')');
       } else if (marker === 0xFE) {
@@ -179,23 +212,53 @@ var MetaReader = (function () {
   }
 
   function readPng(bytes) {
-    var meta = { fields: [], extras: [], gps: null, orientation: null };
+    var meta = emptyMeta();
     var dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
     var off = 8;
     while (off + 12 <= bytes.length) {
       var len = dv.getUint32(off);
       var type = String.fromCharCode(bytes[off + 4], bytes[off + 5], bytes[off + 6], bytes[off + 7]);
       if (off + 12 + len > bytes.length) break;
+      var dataEnd = off + 8 + len;
       if (type === 'tEXt' || type === 'iTXt') {
         var kw = '';
-        for (var i = off + 8; i < off + 8 + len && bytes[i] !== 0 && kw.length < 40; i++) {
+        var i = off + 8;
+        for (; i < dataEnd && bytes[i] !== 0 && kw.length < 60; i++) {
           kw += String.fromCharCode(bytes[i]);
         }
-        meta.extras.push('Text: ' + (kw || 'unnamed') + ' (' + fmtSize(len) + ')');
+        var value = null;
+        if (type === 'tEXt') {
+          value = decodeText(bytes, i + 1, dataEnd, false);
+        } else {
+          // iTXt: keyword\0 compFlag(1) compMethod(1) lang\0 translated\0 text
+          var p = i + 1;
+          var compFlag = bytes[p]; p += 2;
+          while (p < dataEnd && bytes[p] !== 0) p++;
+          p++;
+          while (p < dataEnd && bytes[p] !== 0) p++;
+          p++;
+          if (compFlag === 0) value = decodeText(bytes, p, dataEnd, true);
+        }
+        if (AI_TEXT_KEYS[kw]) {
+          if (!meta.ai) meta.ai = { tool: AI_TEXT_KEYS[kw], prompt: null };
+          if (value && (!meta.ai.prompt || kw === 'parameters')) {
+            meta.ai.tool = AI_TEXT_KEYS[kw];
+            meta.ai.prompt = value.slice(0, 800);
+          }
+          meta.extras.push('AI generation data: ' + kw + ' (' + fmtSize(len) + ')');
+        } else if (kw === 'Software' && value && value.indexOf('NovelAI') !== -1) {
+          if (!meta.ai) meta.ai = { tool: 'NovelAI', prompt: null };
+          meta.extras.push('Text: Software — NovelAI');
+        } else {
+          meta.extras.push('Text: ' + (kw || 'unnamed') + ' (' + fmtSize(len) + ')');
+        }
       } else if (type === 'zTXt') {
         meta.extras.push('Compressed text (' + fmtSize(len) + ')');
       } else if (type === 'tIME') {
         meta.extras.push('Last-modified timestamp');
+      } else if (type === 'caBX') {
+        meta.contentCredentials = true;
+        meta.extras.push('Content Credentials — C2PA (' + fmtSize(len) + ')');
       } else if (type === 'eXIf') {
         var tiff = parseTiff(bytes, off + 8);
         meta.fields = meta.fields.concat(tiff.fields);
@@ -209,7 +272,7 @@ var MetaReader = (function () {
   }
 
   function readWebp(bytes) {
-    var meta = { fields: [], extras: [], gps: null, orientation: null };
+    var meta = emptyMeta();
     var dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
     var off = 12;
     while (off + 8 <= bytes.length) {
@@ -223,7 +286,12 @@ var MetaReader = (function () {
         if (tiff.gps) meta.gps = tiff.gps;
         if (tiff.orientation) meta.orientation = tiff.orientation;
       } else if (fourcc === 'XMP ') {
-        meta.extras.push('XMP data (' + fmtSize(size) + ')');
+        var aiMark = findAscii(bytes, off + 8, off + 8 + size, 'trainedAlgorithmicMedia');
+        if (aiMark) meta.aiFlag = true;
+        meta.extras.push('XMP data' + (aiMark ? ' — AI-generated marker' : '') + ' (' + fmtSize(size) + ')');
+      } else if (fourcc === 'C2PA') {
+        meta.contentCredentials = true;
+        meta.extras.push('Content Credentials — C2PA (' + fmtSize(size) + ')');
       }
       off += 8 + size + (size & 1);
     }
@@ -242,7 +310,7 @@ var MetaReader = (function () {
       if (kind === 'png') return readPng(bytes);
       if (kind === 'webp') return readWebp(bytes);
     } catch (e) { /* fall through */ }
-    return { fields: [], extras: [], gps: null, orientation: null };
+    return emptyMeta();
   }
 
   return { read: read, formatField: formatField, fmtSize: fmtSize };

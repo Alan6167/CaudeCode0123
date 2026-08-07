@@ -1,15 +1,16 @@
-# Metadata Remover
+# AI Metadata Remover
 
-Free online tool that removes EXIF, GPS, and other metadata from photos — entirely in the browser. No uploads, no accounts, lossless output.
+Free online tool that removes EXIF, GPS, embedded AI generation data, and C2PA Content Credentials from images — entirely in the browser. No uploads, no accounts, lossless output.
 
-Built as an MVP targeting the "metadata remover" keyword cluster. Product research: see `output/documents/2026-08-07-metadata-remover-keyword-research/keyword-research.md`.
+Built as an MVP with dual positioning: generic "metadata remover" head terms plus the "AI metadata" niche (aimetadataremover domain). Product research and domain strategy: see `output/documents/2026-08-07-metadata-remover-keyword-research/keyword-research.md` (section 10 covers the AI positioning).
 
 ## Features
 
 - **100% client-side** — files are parsed and cleaned with vanilla JavaScript in the browser; nothing is ever uploaded. Works offline once loaded.
 - **Lossless** — image data is never decoded or re-encoded. Only metadata sections are removed, so quality is bit-for-bit identical.
-- **Formats** — JPEG (removes EXIF, XMP, IPTC/Photoshop, comments, multi-picture data, and hidden data after the image end), PNG (tEXt/zTXt/iTXt/eXIf/tIME chunks), WebP (EXIF/XMP chunks + VP8X flag fix).
-- **Metadata preview** — shows what each photo contained (camera, dates, software, and a highlighted GPS location warning) before download.
+- **Formats** — JPEG (removes EXIF, XMP, IPTC/Photoshop, comments, C2PA APP11/JUMBF, multi-picture data, and hidden data after the image end), PNG (tEXt/zTXt/iTXt/eXIf/tIME/caBX chunks), WebP (EXIF/XMP/C2PA chunks + VP8X flag fix).
+- **AI metadata aware** — detects and displays embedded AI generation data: Stable Diffusion / ComfyUI / InvokeAI prompts and workflows stored in PNG text chunks (with an in-card prompt preview), C2PA Content Credentials, and XMP `trainedAlgorithmicMedia` markers.
+- **Metadata preview** — shows what each image contained (camera, dates, software, AI prompts, and a highlighted GPS location warning) before download.
 - **Batch** — multiple files at once, with a dependency-free ZIP download (store method).
 - **Orientation-safe** — optionally re-adds a minimal orientation-only EXIF tag (default on) so cleaned photos don't display sideways. No personal data involved.
 - **Accessible & responsive** — keyboard-operable dropzone, `aria-live` status announcements, mobile-first layout, dark mode, reduced-motion support.
@@ -37,7 +38,7 @@ Any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). Point t
 | `index.html` | Page structure, SEO meta, `WebApplication` + `FAQPage` JSON-LD, FAQ content |
 | `css/styles.css` | Design system (light/dark), layout, components |
 | `js/cleaners.js` | Lossless metadata strippers: JPEG segment parser, PNG chunk parser, WebP RIFF parser |
-| `js/exif-reader.js` | Read-only TIFF/EXIF parser for the "what was found" preview (incl. GPS decoding) |
+| `js/exif-reader.js` | Read-only TIFF/EXIF parser for the "what was found" preview (incl. GPS decoding and AI-signature detection) |
 | `js/zip.js` | Minimal store-only ZIP writer for batch downloads |
 | `js/app.js` | UI flow: drop/browse/paste → auto-clean → download |
 
