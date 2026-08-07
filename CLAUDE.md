@@ -90,7 +90,7 @@ As this repository grows, the following structure is recommended:
 │   │   └── YYYY-MM-DD-article-name/
 │   ├── skills/          # Generated skill packages
 │   └── documents/       # Other generated documents
-├── metadata-remover/     # Metadata Remover MVP website (static, 100% client-side)
+├── metadata-remover/     # AI Metadata Remover MVP website (static, 100% client-side)
 │   ├── index.html       # Landing page + tool UI (SEO meta, FAQ, JSON-LD)
 │   ├── css/styles.css   # Design system (light/dark, mobile-first)
 │   ├── js/              # cleaners.js, exif-reader.js, zip.js, app.js
