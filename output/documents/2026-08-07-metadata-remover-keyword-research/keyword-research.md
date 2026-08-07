@@ -148,6 +148,74 @@ EXIF, IPTC, XMP, GPS coordinates, geotag, camera model, serial number, timestamp
 
 ---
 
+## 10. 附录:域名为 aimetadataremover 时的定位升级方案
+
+**日期:** 2026-08-07(应后续提问补充)
+
+### 10.1 域名解读:两种读法,一个真机会
+
+"aimetadataremover" 有两种解读:
+
+1. **"AI 驱动的元数据清除器"** —— 弱解读。清除元数据是确定性的二进制操作,不需要 AI,硬蹭"AI"会显得营销化且无法兑现。
+2. **"AI(图片)元数据清除器"** —— 强解读,真正的机会。AI 生成图片(Stable Diffusion、Midjourney、DALL-E、Firefly)会嵌入一类全新的、普通用户不知道的元数据,围绕它已形成一个**上升期、竞争尚浅的关键词利基**,而该域名恰好精确匹配这个词簇的头部词 "ai metadata remover"。
+
+**建议:双定位。** 首页保留通用 metadata remover 工具(承接大盘词),品牌与内容重心转向 "AI 图片元数据" 专精(承接利基词,建立差异化认知)。
+
+### 10.2 AI 图片元数据全景(事实基础)
+
+| 元数据 | 谁写入 | 存在哪里 | 用户为什么想清除 |
+|--------|--------|----------|------------------|
+| 生成参数(完整 prompt、负面词、seed、采样器、模型 hash、ComfyUI workflow) | Stable Diffusion / A1111 / ComfyUI | PNG tEXt/iTXt "parameters" 等文本块,明文 | **保护提示词与工作流**——别人拖进自己的 UI 即可复现;创作者最强痛点 |
+| C2PA Content Credentials(密码学签名的溯源清单,含"AI 生成"声明) | DALL-E/OpenAI、Adobe Firefly、部分相机与手机 | **格式专属容器**:JPEG APP11 (JUMBF)、PNG caBX 块——不在 EXIF 里,**通用 EXIF 清除器经常漏掉** | 社交平台(Instagram/X/LinkedIn)读到即打 "Made with AI" 标签 |
+| XMP/IPTC AI 标记(digitalSourceType=trainedAlgorithmicMedia、CreatorTool) | 各生成器与编辑软件 | XMP (JPEG APP1 / PNG iTXt) | 图库(Adobe Stock、Shutterstock、Pinterest)扫描这些签名做 AI 标记 |
+| 像素级隐形水印(Google SynthID 等) | Imagen/Gemini 等 | **图像像素内,不是元数据** | **无法通过元数据清除移除**——必须在 FAQ 诚实说明 |
+
+### 10.3 新增关键词簇
+
+- **头部:** ai metadata remover、remove ai metadata、ai image metadata remover
+- **C2PA 簇:** remove c2pa metadata、content credentials remover、remove content credentials from image、"made with ai" label remove
+- **SD 簇:** remove stable diffusion metadata、remove prompt from png、comfyui workflow metadata remove、sd png info remover
+- **生成器品牌簇:** midjourney metadata、dall-e image metadata、firefly content credentials(信息型指南页承接)
+- **检测簇(反向意图,同一旅程):** check if image is ai generated、ai image metadata checker、view stable diffusion prompt from image
+
+### 10.4 竞争格局(2026-08 抽样)
+
+利基已被验证但格局未定:aimetadatacleaner.com(名字最接近,博客驱动)、aiphotocheck.com(C2PA 检测+清除双线)、c2pacleaner.com、metastrip.app、privyclean.app、exifreader.com/ai-metadata-remover、metaremover.com、rave-tools.com 等。共同特征:**全部是新兴小工具站,无权威大站压场**,内容深度普遍一般。EMD + 更强的产品体验(本地处理、提示词展示)+ 系统化内容仍有明确空间。
+
+### 10.5 差异化与产品功能路线
+
+1. **P0 — AI 痕迹检测与展示(信任时刻):** 解析 PNG "parameters" 文本块并**展示嵌入的完整提示词**("你的 PNG 里明文写着你的 prompt 和 seed"),检测 C2PA 清单与 XMP AI 标记并打 "AI generation data" 徽章。这是比 GPS 警示更强的 wow moment,竞品大多只删不展示。
+2. **P0 — C2PA 全格式清除补齐:** 现有引擎 JPEG APP11 (JUMBF) 已覆盖(APPn 白名单机制天然清除);**PNG 需把 caBX 加入删除列表**(当前会漏);WebP 需按 C2PA 规范核实其 chunk 标识后补齐。这直接兑现"通用清除器漏掉 C2PA,我们不漏"的差异化承诺。
+3. **P1 — AI Image Checker 独立页:** 只查不删,承接检测簇流量,与清除工具互链形成闭环。
+4. **P1 — 生成器指南页:** /guides/midjourney-metadata 等,承接品牌簇信息型流量。
+
+### 10.6 页面架构规划
+
+```
+/                          通用 + AI 双定位首页(现有工具升级)
+/remove-c2pa-content-credentials    C2PA 专题着陆页
+/remove-stable-diffusion-metadata   SD/ComfyUI 专题着陆页
+/ai-image-metadata-checker          检测工具页
+/guides/*                           生成器元数据指南(信息型)
+```
+
+### 10.7 合规与诚实边界(重要)
+
+- **EU AI Act 第 50 条已于 2026-08-02 开始执行**(本附录撰写于其生效第 5 天):面向欧盟分发的 AI 生成内容需携带披露标记。这带来双面效应——公众对 AI 标签的关注与搜索量上升(机会),同时清除披露标记用于欺骗性场景存在合规风险(边界)。
+- **定位话术必须站在"隐私与工作流保护"一侧:** 保护提示词资产、交付前清理生成参数、控制个人创作隐私;**不承诺也不暗示"绕过 AI 检测""让 AI 图不可识别"**——既是伦理与合规边界,技术上也不成立(SynthID 在像素内)。
+- FAQ 增加:"AI 图片包含哪些元数据?""清除元数据会移除 AI 水印吗?(不会,像素水印仍在)""什么场景下不应清除披露标记?(欧盟分发合规)"——诚实边界本身就是信任与 SEO 内容。
+
+### 10.8 落地清单(确认采用该域名后)
+
+- [ ] 品牌/H1/Title 更新:主标题引入 "AI Metadata Remover",副标题保留通用能力表述
+- [ ] cleaners.js:PNG 增加 caBX 删除;核实并补齐 WebP C2PA chunk
+- [ ] exif-reader.js:解析 PNG parameters/workflow 文本块(提示词预览)、检测 JPEG APP11/PNG caBX 存在性、XMP digitalSourceType 标记
+- [ ] UI:新增 "AI generation data" / "Content Credentials" 徽章与提示词展示区
+- [ ] FAQ 与 JSON-LD 扩充 AI 相关问答;新增合规问答
+- [ ] 上线后:canonical/OG url/sitemap.xml/robots.txt 指向新域名;专题页与指南页分批发布
+
+---
+
 **调研主要参考来源:**
 - 竞品 SERP:metadata2go.com、pics.io、internxt.com、metadataonline.com、removemd.com、removeexifdata.com、exifremoval.com、pixelpeeper.com、exifcut.com
 - Apple 官方个人安全指南(照片位置元数据管理)
