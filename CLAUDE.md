@@ -82,9 +82,6 @@ As this repository grows, the following structure is recommended:
 │   │       └── SKILL.md    # Skill creator guide
 │   ├── spec/            # Agent Skills specification
 │   └── template/        # Skill templates
-├── seo-blog-writing/     # Custom SEO Blog Writing skill
-│   ├── SKILL.md         # Skill definition
-│   └── references/      # AI words to avoid reference
 ├── output/              # Generated content and deliverables
 │   ├── articles/        # SEO articles organized by date
 │   │   └── YYYY-MM-DD-article-name/
@@ -95,7 +92,6 @@ As this repository grows, the following structure is recommended:
 │   ├── css/styles.css   # Design system (light/dark, mobile-first)
 │   ├── js/              # cleaners.js, exif-reader.js, zip.js, app.js
 │   └── README.md        # Architecture and deployment notes
-├── seo-blog-writing.skill  # Packaged skill file (5.3KB)
 └── CLAUDE.md            # This file
 ```
 
