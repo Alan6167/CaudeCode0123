@@ -31,6 +31,18 @@ Opening `index.html` directly from disk also works.
 
 Any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). Point the host at the `metadata-remover/` directory. No build step.
 
+### Launch checklist (once the domain is final)
+
+These are intentionally left out until the production URL is confirmed — a canonical or og:url pointing at the wrong domain does active harm:
+
+- [ ] `<link rel="canonical" href="https://<domain>/">`
+- [ ] `<meta property="og:url" content="https://<domain>/">`
+- [ ] `<meta property="og:image" content="https://<domain>/assets/og-image.png">` (asset already in `assets/og-image.png`, 1200x630) + `og:image:width`/`og:image:height`
+- [ ] `<meta name="twitter:card" content="summary_large_image">` + `twitter:image`
+- [ ] Add `"url"` to the WebApplication JSON-LD
+- [ ] `sitemap.xml` + `robots.txt` at the web root
+- [ ] Submit to Google Search Console / Bing Webmaster Tools
+
 ## Architecture
 
 | File | Purpose |
